@@ -1,20 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIT</title>
-
+    <title>Viagens Incríveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .destination-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .destination-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Entendendo git</h1>
-    <br>
-    <ul>
-        <li>Clone</li>
-        <li>Commit</li>
-        <li>Push</li>
-        <li>Pull</li>
-    </ul>
+    <header>
+        <h1>Explore as Melhores Destinos de Viagem</h1>
+    </header>
+
+    <nav>
+        <a href="#destinos">Destinos</a>
+        <a href="#dicas">Dicas de Viagem</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="main-content">
+        <section id="destinos">
+            <h2>Destinos Imperdíveis</h2>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/600x300" alt="Praia de Copacabana">
+                <h3>Rio de Janeiro</h3>
+                <p>Desfrute das praias deslumbrantes e do Cristo Redentor no Rio de Janeiro.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/600x300" alt="Iguazu Falls">
+                <h3>Cataratas do Iguaçu</h3>
+                <p>Explore as impressionantes Cataratas do Iguaçu na fronteira entre Brasil e Argentina.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/600x300" alt="Amazônia">
+                <h3>Amazônia</h3>
+                <p>Vivencie a natureza selvagem e a biodiversidade única da floresta amazônica.</p>
+            </div>
+        </section>
+
+        <section id="dicas">
+            <h2>Dicas de Viagem</h2>
+            <ul>
+                <li>Leve sempre uma mochila confortável e leve.</li>
+                <li>Pesquise sobre a cultura local antes de viajar.</li>
+                <li>Tenha um plano de emergência e saiba os números de contato importantes.</li>
+                <li>Experimente a gastronomia local!</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou quer mais informações? Envie-nos uma mensagem!</p>
+            <form>
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Sua Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Viagens Incríveis | Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
